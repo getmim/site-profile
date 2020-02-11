@@ -78,7 +78,7 @@ return [
                     'router' => [
                         'name' => 'siteProfileSingle',
                         'params' => [
-                            'slug' => '$name'
+                            'name' => '$name'
                         ]
                     ]
                 ]
