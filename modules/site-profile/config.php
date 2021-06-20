@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'site-profile',
-    '__version' => '0.0.1',
+    '__version' => '0.1.0',
     '__git' => 'git@github.com:getmim/site-profile.git',
     '__license' => 'MIT',
     '__author' => [
@@ -51,6 +51,13 @@ return [
     ],
     'routes' => [
         'site' => [
+            'siteProfileIndex' => [
+                'path' => [
+                    'value' => '/profile'
+                ],
+                'method' => 'GET',
+                'handler' => 'SiteProfile\\Controller\\Profile::index'
+            ],
             'siteProfileSingle' => [
                 'path' => [
                     'value' => '/profile/(:name)',
